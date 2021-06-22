@@ -1,55 +1,582 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Fatima Fellowship</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" href="FF_logo2.png" type="image/png" sizes="16x16">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <header class="container">
-    <a href="/" id="logo">
-      Fatima Fellowship
-    </a>
-    <nav>
-      <a href="/blog.html">Blog</a>
-      <a href="/mentors.html">Mentors</a>
-      <a href="/fellows.html">Fellows</a>
-    </nav>
-  </header>
-  <section id="hero">
-    <h1>The Fatima Al-Fihri Predoctoral Fellowship</h1>
-    <h3>A free international program to prepare PhD applicants into top CS PhD programs.</h3>
-    <div id="button_row">
-      <a class="disabled" href="#">Applications: Closed</a>
-      <a href="/mentors.html">Meet our Mentors</a>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:a12d@stanford.edu">a12d@stanford.edu</a></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://twitter.com/fatimafellowshp" class="twitter"><i class="bi bi-twitter"></i></a> 
+      </div>
     </div>
-  </section>
-  <section class="container">
-    <p>The Fatima Al-Fihri Predoctoral Fellowship 2021 is a 9-month program in which computer science students from
-      around the world, who are planning on applying to PhD programs in the United States, work with current PhD
-      students or researchers on research projects to strengthen their applications. The Fellowship is named after
-      Fatima Al-Fihri who established in 859 CE the oldest-running university in the world, an international university
-      for immigrants in Fez, Morocco.</p>
-    <h2>Who's eligible?</h2>
-    <p>Any student around the world who is interested in applying to PhD programs in 2021 or 2022 in computer science or
-      any of its subfields such as machine learning is eligible. We expect most applicants to be juniors, seniors, or
-      Master's students, but this is not necessarily a criterion for the fellowship.</p>
-    <h2>What are the benefits to Fellows?</h2>
-    <ul>
-      <li>Working closely with an experienced researcher. All of our mentors have published research papers in top
-        conferences in computer science and have experience with a specific field of CS/ML.</li>
-      <li>Receiving coaching and mentorship for the PhD application process.</li>
-    </ul>
-    <h2>What are the expectations of Fellows?</h2>
-    <p>Fellows should expect to be actively engaged in a research project with their research mentor from March to
-      October (10-20 hrs / week of independent research + 1 hr / week meeting with their mentors). From October to
-      December, Fellows will focus on preparing their PhD applications, but may continue to wrap up / publish their
-      research projects.</p>
-    <p>The Fellows for 2021 have been selected and applications are currently closed.</p>
-  </section>
+  </section><!-- End Top Bar-->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div id="logo" data-aos="fade-right">
+        <h1><a href="index.html"><img src="FF_logo2.png" alt=""></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#eligibility">Eligibility</a></li>
+          <li class="dropdown"><a href="#"><span>Mentors</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/mentors/mentors_cs.html">Computer Sciences</a></li>
+              <li><a href="/mentors/mentors_social.html">Social Sciences</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Fellows</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./fellows/fellows_cs.html">Computer Sciences</a></li>
+              <li><a href="./fellows/fellows_social.html">Social Sciences</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="/blogs/blogs.html">Blogs</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+
+    <div class="hero-content" data-aos="fade-up">
+      <h2>The Fatima Al-Fihri Predoctoral Fellowship</h2>
+      <h6>A free international program to prepare PhD applicants into top PhD programs.</h6>
+      <div>
+        <a href="#call-to-action" class="btn-projects scrollto">Get Started</a>
+      </div>
+    </div>
+
+    <div class="hero-slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/1.jpeg');"></div>
+      </div>
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/library.jpeg" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>Fatima Fellowship</h2>
+            <h3>The Fatima Al-Fihri Predoctoral Fellowship 2021 is a 9-month program in which students from around
+               the world, who are planning on applying to PhD programs in the United States, work with current PhD students or researchers 
+               on research projects to strengthen their applications. The Fellowship is named after Fatima Al-Fihri who established in 859 CE 
+               the oldest-running university in the world, an international university for immigrants in Fez, Morocco.</h3>
+
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Salient Feature# 1</li>
+              <li><i class="bi bi-check-circle"></i> Salient Feature# 2</li>
+              <li><i class="bi bi-check-circle"></i> Salient Feature# 3</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Eligiblilty Section ======= -->
+    <section id="eligibility">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Who's eligible?</h2>
+          <p>Any student around the world who is interested in applying to PhD programs in 2021 or 2022 in computer science 
+            and any of its subfields such as machine learning or social sciences is eligible. We expect most applicants to be juniors, seniors, 
+            or Master's students, but this is not necessarily a criterion for the fellowship.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">Coaching & Mentorship</a></h4>
+              <p class="description">Receive coaching and mentorship for the PhD application process</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <h4 class="title"><a href="">Skill Development</a></h4>
+              <p class="description"> Develop your skills in emerging fields 
+                to be a future leader in these industries</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Publications</a></h4>
+              <p class="description">Working closely with an experienced researcher. All of our mentors have published research 
+                papers in top conferences and have experience with a specific field.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Clients Section ======= 
+    <section id="clients">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Clients</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+
+        <div class="clients-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> End Clients Section -->
+
+    <!-- ======= Portfolio Section ======= 
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Our Portfolio</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>  End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= 
+    <section id="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Testimonials</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div>End testimonial item 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div>End testimonial item 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div>End testimonial item 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div> End testimonial item 
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div>End testimonial item 
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+    End Testimonials Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container" data-aos="zoom-out">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Applications Closed</h3>
+            <p class="cta-text">The Fellows for 2021 have been selected and applications are currently closed.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" disabled="true" href="#">Applications Closed</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Team Section ======= 
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Our Team</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-1.jpeg" alt=""></div>
+              <div class="details">
+                <h4>Abubakar Abid</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href="https://twitter.com/abidlabs"><i class="bi bi-twitter"></i></a>
+                  <a href="https://github.com/abidlabs"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/abid15/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-2.png" alt=""></div>
+              <div class="details">
+                <h4>Mehmet Efe Akengin</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/avatar.png" alt=""></div>
+              <div class="details">
+                <h4>Ali Abid</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/avatar.png" alt=""></div>
+              <div class="details">
+                <h4>Razan Baltaji</h4>
+                <span>Chief Strategist</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-6">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:a12d@stanford.edu">a12d@stanford.edu</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <div class="container mb-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div> -->
+
+      <div class="container">
+        <div class="form">
+          <form action="forms/email_sender.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+
+            <div class="text-center"><button name="submit" type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Fatima Fellowship</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

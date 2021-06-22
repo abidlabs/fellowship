@@ -19,5 +19,12 @@
         "title": "Seep Learning", 
         "summary": "This is an example article. Please disregard.",
         "authors": ["Ali Abid", "Ali Abid", "Ali Abdallah", "Dawood Khan"]
+    },
+    {
+        "folder": "template", 
+        "date_created": "03/11/2021", 
+        "title": "Machine Learning", 
+        "summary": "This is an example article. Please disregard.",
+        "authors": ["Ali Abid", "Ali Abid", "Ali Abdallah", "Dawood Khan"]
     }
 ]

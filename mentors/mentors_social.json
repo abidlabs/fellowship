@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Abubakar Abid",
+        "email": "a12d@stanford.com",
+        "education": "Stanford PhD 2021",
+        "about": "Abubakar Abid is a PhD student at Stanford University who develops machine learning methods for messy biomedical problems in genetics, medical imaging, and time-series data. He is also interested in making machine learning models work better in interdisciplinary settings, and cofounded <a href='www.gradio.app'>Gradio</a>.",
+        "site": "http://abidlabs.github.com/"
+    },
+    {
+        "name": "Anas Abou-Allaban",
+        "education": "Stanford PhD 2021",
+        "site": "http://abidlabs.github.com/",
+        "about": "Abubakar Abid is a PhD student at Stanford University who develops machine learning methods for messy biomedical problems in genetics, medical imaging, and time-series data. He is also interested in making machine learning models work better in interdisciplinary settings, and cofounded <a href='www.gradio.app'>Gradio</a>."
+        
+    },
+    {
+        "name": "Marouen Ben Guebila",
+        "site": "http://abidlabs.github.com/",
+        "education": "Stanford PhD 2021",
+        "about": "Abubakar Abid is a PhD student at Stanford University who develops machine learning methods for messy biomedical problems in genetics, medical imaging, and time-series data. He is also interested in making machine learning models work better in interdisciplinary settings, and cofounded <a href='www.gradio.app'>Gradio</a>."
+        
+    },
+    {
+        "name": "Abubakar Abid",
+        "email": "a12d@stanford.com",
+        "education": "Stanford PhD 2021",
+        "about": "Abubakar Abid is a PhD student at Stanford University who develops machine learning methods for messy biomedical problems in genetics, medical imaging, and time-series data. He is also interested in making machine learning models work better in interdisciplinary settings, and cofounded <a href='www.gradio.app'>Gradio</a>.",
+        "site": "http://abidlabs.github.com/"
+    },
+    {
+        "name": "Anas Abou-Allaban",
+        "site": "http://abidlabs.github.com/",
+        "education": "Stanford PhD 2021",
+        "about": "Abubakar Abid is a PhD student at Stanford University who develops machine learning methods for messy biomedical problems in genetics, medical imaging, and time-series data. He is also interested in making machine learning models work better in interdisciplinary settings, and cofounded <a href='www.gradio.app'>Gradio</a>."
+        
+    },
+    {
+        "name": "Marouen Ben Guebila",
+        "site": "http://abidlabs.github.com/",
+        "education": "Stanford PhD 2021",
+        "about": "Abubakar Abid is a PhD student at Stanford University who develops machine learning methods for messy biomedical problems in genetics, medical imaging, and time-series data. He is also interested in making machine learning models work better in interdisciplinary settings, and cofounded <a href='www.gradio.app'>Gradio</a>."
+    }
+]

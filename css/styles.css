@@ -1,116 +1,116 @@
 html {
-    font-size: 14px;
+	font-size: 14px;
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.8em;
-    margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.8em;
+	margin: 0;
 }
 .container {
-    max-width: 1028px;
-    padding-left: 24px;
-    padding-right: 24px;
-    width: 100%;
-    margin: 2em auto;
-    box-sizing: border-box;
+	max-width: 1028px;
+	padding-left: 24px;
+	padding-right: 24px;
+	width: 100%;
+	margin: 2em auto;
+	box-sizing: border-box;
 }
 a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: bold;
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
 }
 a.selected {
-    color: cornflowerblue;
+	color: cornflowerblue;
 }
 a:hover {
-    color: cornflowerblue;
+	color: cornflowerblue;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 2em;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 2em;
 }
 nav a {
-    padding: 0 1em 0;
+	padding: 0 1em 0;
 }
 #logo {
-    font-size: 28px;
-    font-weight: bold;
+	font-size: 28px;
+	font-weight: bold;
 }
 h1 {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 h2 {
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 h3 {
-    font-size: 1em;
+	font-size: 1em;
 }
 #hero {
-    text-align: center;
-    background-image: url("hero_bg.jpg");
-    background-size: cover;
-    padding: 48px;
+	text-align: center;
+	background-image: url('hero_bg.jpg');
+	background-size: cover;
+	padding: 48px;
 }
 #hero h3 {
-    font-size: 1.2em;
-    font-weight: normal;
-    font-style: italic;
+	font-size: 1.2em;
+	font-weight: normal;
+	font-style: italic;
 }
 #hero #button_row {
-    margin-top: 3em;
+	margin-top: 3em;
 }
 #hero a {
-    background-color: cornflowerblue;
-    border: solid 2px cornflowerblue;
-    font-size: 1.2em;
-    padding: 0.5em 1em;
-    color: white;
-    border-radius: 4px;
-    margin: 0.5em;
-    display: inline-block;
+	background-color: cornflowerblue;
+	border: solid 2px cornflowerblue;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	color: white;
+	border-radius: 4px;
+	margin: 0.5em;
+	display: inline-block;
 }
 #hero a.disabled {
-    background-color: white;
-    color: cornflowerblue;
-    cursor: not-allowed;
+	background-color: white;
+	color: cornflowerblue;
+	cursor: not-allowed;
 }
 .card {
-    font-weight: normal;
-    display: block;
-    padding: 0 1em;
-    border: solid 1px lightgray;
-    margin-bottom: 1em;
-    transition: box-shadow 0.2s ease;
+	font-weight: normal;
+	display: block;
+	padding: 0 1em;
+	border: solid 1px lightgray;
+	margin-bottom: 1em;
+	transition: box-shadow 0.2s ease;
 }
 .card:hover {
-    color: inherit;
-    box-shadow: 0px 2px 8px lightgray;
+	color: inherit;
+	box-shadow: 0px 2px 8px lightgray;
 }
 .card h2 {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 .credit {
-    color: gray;
-    font-style: italic;
+	color: gray;
+	font-style: italic;
 }
 @media only screen and (max-width: 600px) {
-    header {
-      display: block;
-      text-align: center;
-    }
-    nav {
-        margin-top: 1em;
-    }
+	header {
+		display: block;
+		text-align: center;
+	}
+	nav {
+		margin-top: 1em;
+	}
 }
 body#blog p {
-    text-indent: 2em;
+	text-indent: 2em;
 }
 figure {
-    text-align: center;
+	text-align: center;
 }
 figcaption {
-    color: gray;
-    margin-top: 1em;
+	color: gray;
+	margin-top: 1em;
 }
