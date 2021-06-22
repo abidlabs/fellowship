@@ -114,3 +114,7 @@ figcaption {
 	color: gray;
 	margin-top: 1em;
 }
+
+li {
+	padding-top: 10px;
+}

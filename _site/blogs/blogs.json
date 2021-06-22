@@ -1,0 +1,30 @@
+[
+    {
+        "folder": "template", 
+        "date_created": "04/11/2021", 
+        "title": "Deep Learning", 
+        "summary": "This is an example article. Please disregard.",
+        "authors": ["Ali Abid"]
+    },
+    {
+        "folder": "template", 
+        "date_created": "03/11/2021", 
+        "title": "Seep Learning", 
+        "summary": "This is an example article. Please disregard.",
+        "authors": ["Ali Abid", "Ali Abdallah"]
+    },
+    {
+        "folder": "template", 
+        "date_created": "03/11/2021", 
+        "title": "Seep Learning", 
+        "summary": "This is an example article. Please disregard.",
+        "authors": ["Ali Abid", "Ali Abid", "Ali Abdallah", "Dawood Khan"]
+    },
+    {
+        "folder": "template", 
+        "date_created": "03/11/2021", 
+        "title": "Machine Learning", 
+        "summary": "This is an example article. Please disregard.",
+        "authors": ["Ali Abid", "Ali Abid", "Ali Abdallah", "Dawood Khan"]
+    }
+]
