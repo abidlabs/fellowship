@@ -635,6 +635,10 @@ section {
 	color: #ce9637;
 }
 
+img.logo{
+	width: 100%;
+}
+
 #about .content ul {
 	list-style: none;
 	padding: 0;
@@ -642,6 +646,7 @@ section {
 
 #about .content ul li {
 	padding-bottom: 10px;
+	margin-top: 20px;
 }
 
 /* Services Section
